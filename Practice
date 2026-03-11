@@ -1,9 +1,0 @@
-What I've Built & Practiced
-
-- 🏠 **Active Directory Home Lab** — Deployed Windows Server, configured users, OUs, GPOs, and security groups to simulate a real enterprise IT environment
-- 🖥️ **Multi-OS Security Lab** — Configured Kali Linux, Parrot OS, Fedora, Ubuntu, macOS, Windows Server 2016 & Windows 11 in VirtualBox for testing vulnerabilities and OS-level security analysis
-- 🎯 **Incident Response Simulation** — Executed full IR cycle, including containment, evidence collection, and recovery (Commonwealth Bank / Forage)
-- 🎣 **Phishing Threat Analysis** — Identified attack vectors, analyzed phishing TTPs, and produced security awareness recommendations (Mastercard / Forage)
-- 🔧 **Firewall & Risk Assessment** — Applied network segmentation and firewall configuration in a simulated enterprise environment (PwC Switzerland / Forage)
-- 📚 **200+ Hours** of structured labs across TryHackMe, Cybrary, Udemy & Coursera
-

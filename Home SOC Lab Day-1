@@ -1,0 +1,15 @@
+Home SOC Lab — Day 1. Rebuilding from scratch. Documenting everything.
+
+9 virtual machines. 4 OS families. One goal: simulate a real enterprise environment I can attack, defend, and investigate.
+
+Here's exactly what went up today:
+
+# 1. macOS VM — cross-platform attack surface. Because threats don't only target Windows.
+# 2. DC Server (Windows Server 2019) — Active Directory + DNS live. The domain controller every endpoint will authenticate through.
+# 3. DJ Ubuntu Server — future log aggregation and SIEM host. Every event in the lab flows here.
+# 4. Ubuntu Desktop — the analyst workstation. Where investigations happen.
+# 5. Fedora Sec — security-hardened Linux with forensics toolset pre-loaded.
+# 6. Kali Linux 2026.1 — the attacker machine. Runs side by side with the DC Server intentionally — every attack generates logs on the other side.
+# 7. Win10DJ — vulnerable Windows 10 endpoint. Domain-joined. Deliberately noisy.
+# 8. Win11DJ — same story, newer OS. Two endpoint generations to monitor.
+# 9.Parrot Sec — forensics and incident response platform. Where post-compromise analysis happens.

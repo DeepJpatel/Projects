@@ -1,0 +1,60 @@
+Instead of jumping directly into tools, I focused on building a **clean and scalable network architecture**.
+
+
+##  Network Overview
+
+- **Internal Network:** SOC-LAB (192.168.10.0/24)
+- **Subnet Mask:** 255.255.255.0
+- **DNS Server:** 192.168.10.250
+- **Internet Access:** NAT (Outbound only)
+
+Each VM is configured with:
+- Adapter 1 → NAT (Internet)
+- Adapter 2 → Internal Network (SOC-LAB)
+
+## Lab Components
+
+### Core Infrastructure
+- Windows Server 2019  
+  - Active Directory (AD DS)  
+  - DNS  
+
+### Endpoints (Victims)
+- Windows 10 → 192.168.10.10  
+- Windows 11 → 192.168.10.11  
+- macOS → 192.168.10.12  
+
+### User Simulation
+- Fedora → 192.168.10.13  
+
+###  Attack Machines
+- Kali Linux → 192.168.10.14  
+- Parrot Security → 192.168.10.16  
+
+###  Monitoring / SIEM
+- Ubuntu Desktop → 192.168.10.15  
+
+### Not Connected (For Now)
+- Ubuntu Server (CLI)
+
+## 🧠 Key Design Decisions
+
+- Isolated internal network for realistic attack simulation
+- NAT used only for controlled internet access
+- Static IP addressing for consistency and control
+- Clear segmentation:
+  - Victims
+  - Attackers
+  - Monitoring
+
+## 🚀 Next Steps
+
+- Log ingestion into SIEM (Splunk)
+- Install forwarders on endpoints
+- Simulate attacks (Kali → endpoints)
+- Build detection rules
+
+## 📌 Key Takeaway
+
+> A solid network architecture saves hours of troubleshooting later.
+
